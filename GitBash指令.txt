@@ -1,0 +1,17 @@
+Git Bash 打开git仿真界面
+1创建版本库
+cd d:\git\git-project            --进入该目录
+mkfir testRepository             --在该目录下创建一个文件夹，这就是版本库
+git init                         --将该目录变成Git管理的版本库
+在版本库新建一个文件，并写入一些内容,然后通过 git add 将文件添加到版本库
+git commit -m "第一次提交"       --将文件提交到版本库
+git status                       --可以查看版本库当前状态
+git diff                         --可以查看修改的历史记录
+git log                          --可以查看最近到最远的提交日志
+git reset --hard HEAD^           --HEAD表示当前版本 ，该命令表示回退到上一个版本  
+git reset --hard HEAD~100			   --表示回退到上100个版本
+git reflog                       --记录你每一次命令信息,可以根据它来找版本号 commit_id
+git reset --hard commit_id       --回退到指定版本 
+
+
+
