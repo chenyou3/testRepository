@@ -6,7 +6,7 @@ git init                         --将该目录变成Git管理的版本库
 
 git add                          --在版本库新建一个文件，并写入一些内容,然后通过 git add 将文件添加到版本库 提交更改到暂存区
 git commit -m "第一次提交"       --将文件提交到版本库 现在你的改动已经提交到HEAD
-
+git push origin master           --将HEAD推送到远程仓库
 
 git status                       --可以查看版本库当前状态
 git diff                         --可以查看修改的历史记录
@@ -18,9 +18,3 @@ git reset --hard commit_id       --回退到指定版本
 
 
 
-关联本地仓库和远程仓库
-1在GitHub上创建一个git仓库比如名为Test2的仓库
-2关联本地仓库和远程仓库 ，最好同名
-$ git remote add origin https://github.com/chenyou3/Test2.git
-3推送内容到远程仓库
-$ git push -u origin master      --第一次推送需要加 -u ，以后推送内容 $ git push origin master
